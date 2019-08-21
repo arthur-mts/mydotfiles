@@ -1,9 +1,13 @@
 set nu
 set laststatus=2
 set noshowmode
-set ts=4
 syntax on
 set ai
+
+set expandtab
+set smarttab
+set tabstop=2
+set shiftwidth=4
 
 set clipboard=unnamed
 

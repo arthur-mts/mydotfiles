@@ -8,9 +8,11 @@ export ZSH="/home/arthurmts/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-#ZSH_THEME='dracula'
+#ZSH_THEME="robbyrussell"
 
+#ZSH_THEME='dracula'
+ 
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,14 +102,46 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+##Plugins config
 ### Added by Zplugin's installer
 source '/home/arthurmts/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin's installer chunk
-
+#
 zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
-zplugin light dracula/zsh
-zplugin light mafredri/zsh-async
+zplugin light zsh-users/zsh-history-substring-search
+
+source ~/.zplug/init.zsh
+
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+
+
+#Spaceship config
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  hg            # Mercurial section (hg_branch  + hg_status)
+  exec_time     # Execution time
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+SPACESHIP_USER_SHOW=always
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+#SPACESHIP_CHAR_SYMBOL="❯"
+SPACESHIP_CHAR_SUFFIX=" "
+
+# Simplify prompt if we're using Hyper
+if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
+  SPACESHIP_PROMPT_SEPARATE_LINE=false
+  SPACESHIP_DIR_SHOW=false
+  SPACESHIP_GIT_BRANCH_SHOW=false
+fi

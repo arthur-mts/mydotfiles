@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/arthurmts/.oh-my-zsh"
+export ZSH="/home/tuca/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 
 ##Plugins config
 ### Added by Zplugin's installer
-source '/home/arthurmts/.zplugin/bin/zplugin.zsh'
+source '/home/tuca/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin's installer chunk
@@ -145,3 +145,6 @@ if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
   SPACESHIP_DIR_SHOW=false
   SPACESHIP_GIT_BRANCH_SHOW=false
 fi
+
+export PATH="$(yarn global bin):$PATH"
+

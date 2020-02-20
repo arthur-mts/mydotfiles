@@ -1,0 +1,11 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "debug.console.fontFamily": "Fira Code"
+}

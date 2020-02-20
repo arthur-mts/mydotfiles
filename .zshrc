@@ -100,8 +100,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 
 ##Plugins config
 ### Added by Zplugin's installer
@@ -147,4 +145,3 @@ if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
 fi
 
 export PATH="$(yarn global bin):$PATH"
-

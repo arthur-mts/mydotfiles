@@ -26,6 +26,15 @@ Plugin 'c.vim'
 call vundle#end()            " required
 filetype plugin indent on
 
+
+" Configuração do vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
+call plug#end()
+
+
 " Configurações do LightLine
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -41,3 +50,4 @@ color dracula
 
 " Configurações do Ctrl C
 vmap <C-c> "+y
+

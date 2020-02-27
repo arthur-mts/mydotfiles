@@ -1,4 +1,5 @@
 {
+    "terminal.integrated.shell.linux": "/bin/zsh",
     "workbench.iconTheme": "material-icon-theme",
     "files.associations": {
         "*.js": "javascriptreact"
@@ -7,5 +8,9 @@
     "terminal.integrated.fontFamily": "Fira Code",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "debug.console.fontFamily": "Fira Code"
+    "debug.console.fontFamily": "Fira Code",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    },
+    "powermode.enabled": true,
 }

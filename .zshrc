@@ -134,7 +134,6 @@ SPACESHIP_PROMPT_ORDER=(
 )
 SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
-#SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
 # Simplify prompt if we're using Hyper
@@ -145,3 +144,6 @@ if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
 fi
 
 export PATH="$(yarn global bin):$PATH"
+
+alias setTime="sudo date +"%d %b %Y %T %Z" -s "$(wget -qSO- --max-redirect=0 http://google.com 2>&1 | grep '^  Date:' | cut -d' ' -f 5-)"
+"

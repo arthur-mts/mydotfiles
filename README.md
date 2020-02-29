@@ -1,15 +1,19 @@
 # Dotfiles
 
 
-# Vim e Oh-my-zsh!
+## Vim
 
-[![terminal com zsh e alguns plugins](https://raw.githubusercontent.com/punisher077/mydotfiles/master/screenshot_zsh.png "das")](https://raw.githubusercontent.com/punisher077/mydotfiles/master/screenshot_zsh.png "das")
+[![Screenshot vim](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_vim.png ".vimrc")](http://https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_vim.png "Screenshot vim")
 
-[![Screenshot vim](https://raw.githubusercontent.com/punisher077/mydotfiles/master/screenshot_vim.png "Screenshot vim")](http://https://raw.githubusercontent.com/punisher077/mydotfiles/master/screenshot_vim.png "Screenshot vim")
+- Gerenciador de plugins do VIM: **vundle** e **plug**
 
+## Oh-my-zsh!
+[![terminal com zsh e alguns plugins](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_zsh.png "das")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_zsh.png "das")
 
 - Gerenciador de plugins do zsh: **zplug** e **zplugin**
-- Gerenciador de plugins do VIM: **vundle**
 
+## i3 e polybar
+
+[![terminal com zsh e alguns plugins](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/arch.png "meu arch")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/arch.png "meu arch")
 
 [editor.md](https://pandao.github.io/editor.md/en.html "editor.md")

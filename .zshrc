@@ -116,6 +116,7 @@ zplugin light zsh-users/zsh-history-substring-search
 source ~/.zplug/init.zsh
 
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+zplug "b4b4r07/emoji-cli"
 
 
 #Spaceship config
@@ -147,8 +148,6 @@ fi
 export PATH="$(yarn global bin):$PATH"
 
 alias polybar-restart="killall polybar ; sh $HOME/.config/polybar/launch.sh"
-
-alias music="ncmpcpp"
 
 alias setTime="sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z""
 

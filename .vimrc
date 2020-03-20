@@ -23,6 +23,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'dracula/vim'
 Plugin 'c.vim'
+Plugin 'davidhalter/jedi-vim'
+
 call vundle#end()            " required
 filetype plugin indent on
 

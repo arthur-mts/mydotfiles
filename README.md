@@ -1,11 +1,11 @@
-# Dotfiles
+# My Dotfiles
 
 
-## Vim
+### Vim
 
 [![Screenshot vim](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_vim.png ".vimrc")](http://https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_vim.png "Screenshot vim")
 
-- Gerenciador de plugins do VIM: **vundle** e **plug**
+- Gerenciador de plugins do VIM: **vundle**,  **plug** e **plugin**
 
 ## Oh-my-zsh!
 [![terminal com zsh e alguns plugins](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_zsh.png "das")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_zsh.png "das")

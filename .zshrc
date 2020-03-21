@@ -148,6 +148,17 @@ fi
 export PATH="$(yarn global bin):$PATH"
 
 alias polybar-restart="killall polybar ; sh $HOME/.config/polybar/launch.sh"
+alias neofetch="neofetch --backend w3m --source ~/Imagens/82395.jpg"
 
-alias setTime="sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z""
+# PYwal config
+#
+
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
+neofetch
 

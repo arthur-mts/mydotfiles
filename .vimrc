@@ -33,6 +33,7 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 
@@ -48,8 +49,8 @@ let g:lightline = {
       \   'charvaluehex': '0x%B'
       \ },
       \ }
-color dracula
-
+" color dracula
+colorscheme wal
 " Configurações do Ctrl C
 vmap <C-c> "+y
 

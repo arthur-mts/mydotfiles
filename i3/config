@@ -32,9 +32,11 @@ exec --no-startup-id nm-applet
 
 
 ## Iniciando programas uteis
-exec --no-startup-id "killall polybar ; sh ~/.config/poluybar/launch.sh"
+exec --no-startup-id feh --bg-fill ~/Imagens/82395.jpg
 
-exec --no-startup-id "killall mopidy ;mopidy"
+exec --no-startup-id polybar-restart
+
+exec --no-startup-id killall mopidy ;mopidy
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -42,15 +44,21 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec termite
+# start floating terminal
+for_window[class="floatermite"] floating enable
+bindsym $mod+Return exec termite --class "floatermite"
+
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
+
+bindsym Print exec gnome-screenshot -i
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun
 # There also is the (new) i3-dmenu-desktop which only displays applications

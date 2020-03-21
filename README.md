@@ -7,13 +7,20 @@
 
 - Gerenciador de plugins do VIM: **vundle**,  **plug** e **plugin**
 
-## Oh-my-zsh!
+### Oh-my-zsh!
 [![terminal com zsh e alguns plugins](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_zsh.png "das")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/screenshot_zsh.png "das")
 
 - Gerenciador de plugins do zsh: **zplug** e **zplugin**
 
 ## i3 e polybar
 
-[![terminal com zsh e alguns plugins](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/arch.png "meu arch")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/arch.png "meu arch")
+[![desktop com i3](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png "meu arch")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png)
 
-[editor.md](https://pandao.github.io/editor.md/en.html "editor.md")
+- Temas do polybar: [polybar-themes-3](https://github.com/adi1090x/polybar-themes)
+
+- Script para pegar as cores do wallpaper: [pywal](https://github.com/dylanaraps/pywal)
+
+### GTK-3
+
+
+[![configurações do gtk-3](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png "meu arch")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png)

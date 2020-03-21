@@ -17,10 +17,11 @@
 [![desktop com i3](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png "meu arch")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png)
 
 - Temas do polybar: [polybar-themes-3](https://github.com/adi1090x/polybar-themes)
-
 - Script para pegar as cores do wallpaper: [pywal](https://github.com/dylanaraps/pywal)
 
 ### GTK-3
 
+[![configurações do gtk-3](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/gtk3.png)](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/gtk3.png)
 
-[![configurações do gtk-3](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png "meu arch")](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/i3.png)
+- Pacote de icones: [Gruvbox](https://www.gnome-look.org/p/1327720/)
+- Tema: [Juno](https://www.gnome-look.org/p/1280977/)

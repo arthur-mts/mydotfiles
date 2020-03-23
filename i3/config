@@ -30,11 +30,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-
 ## Iniciando programas uteis
 exec --no-startup-id feh --bg-fill ~/Imagens/82395.jpg
 
-exec --no-startup-id polybar-restart
 
 exec --no-startup-id killall mopidy ;mopidy
 # Use pactl to adjust volume in PulseAudio.
@@ -58,7 +56,10 @@ bindsym $mod+Return exec termite --class "floatermite"
 bindsym $mod+Shift+q kill
 
 
-bindsym Print exec gnome-screenshot -i
+bindsym $mod+Print exec deepin-screenshot -s ~/Imagens/
+bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+
+bindsym Ctrl+Print exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -200,5 +201,6 @@ bindsym $mod+z scratchpad show
 #bar {
 #        status_command i3status
 #}
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 bindcode $mod+48 exec ~/.i3/bin/i3-toggle-border
+exec --no-startup-id polybar-restart

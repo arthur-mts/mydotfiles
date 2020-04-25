@@ -30,11 +30,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+
 ## Iniciando programas uteis
 exec --no-startup-id feh --bg-fill ~/Imagens/82395.jpg
 
-
-exec --no-startup-id killall mopidy ;mopidy
+## exec --no-startup-id killall mopidy ;mopidy
+## exec --no-startup-id redshift-gtk &
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -161,8 +162,6 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-
-bindsym $mod+Shift+p exec "polybar-restart"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -204,3 +203,4 @@ bindsym $mod+z scratchpad show
 for_window [class=".*"] border pixel 0
 bindcode $mod+48 exec ~/.i3/bin/i3-toggle-border
 exec --no-startup-id polybar-restart
+

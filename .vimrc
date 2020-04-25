@@ -22,8 +22,10 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'dracula/vim'
-Plugin 'c.vim'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'preservim/nerdtree'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -34,8 +36,10 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'dylanaraps/wal.vim'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()
+
 
 
 " Configurações do LightLine
@@ -50,7 +54,10 @@ let g:lightline = {
       \ },
       \ }
 " color dracula
-colorscheme wal
+colorscheme dracula
 " Configurações do Ctrl C
 vmap <C-c> "+y
+
+au BufNewFile,BufRead *.ts setlocal filetype=typescript
+au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
 

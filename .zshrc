@@ -148,17 +148,18 @@ fi
 export PATH="$(yarn global bin):$PATH"
 
 alias polybar-restart="killall polybar ; sh $HOME/.config/polybar/launch.sh"
-alias neofetch="neofetch --backend w3m --source ~/Imagens/82395.jpg"
+# alias neofetch="neofetch --backend w3m --source ~/Imagens/82395.jpg"
 
-# PYwal config
-#
 
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences
 
-# To add support for TTYs this line can be optionally added.
-source ~/.cache/wal/colors-tty.sh
-neofetch
-
+## PYwal config
+#
+## To add support for TTYs this line can be optionally added.
+# source ~/.cache/wal/colors-tty.sh
+# neofetch
+alias shutdown="sudo systemctl -i poweroff"
+JWT_SECRET="mysecret"

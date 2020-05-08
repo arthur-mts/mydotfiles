@@ -29,8 +29,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-
-
+exec --no-startup-id 'killall polybar ; sh /home/tuca/.config/polybar'
+# exec --no-startup-id polybar-restart
 ## Iniciando programas uteis
 exec --no-startup-id feh --bg-fill ~/Imagens/82395.jpg
 
@@ -48,8 +48,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start floating terminal
-for_window[class="floatermite"] floating enable
-bindsym $mod+Return exec termite --class "floatermite"
+for_window[class="Alacritty"] floating enable
+
+bindsym $mod+Return exec alacritty
 
 
 
@@ -202,5 +203,5 @@ bindsym $mod+z scratchpad show
 #}
 for_window [class=".*"] border pixel 0
 bindcode $mod+48 exec ~/.i3/bin/i3-toggle-border
-exec polybar-restart
 
+bindsym $mod+b exec opera

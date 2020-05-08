@@ -1,14 +1,15 @@
 " Configurações de digitação e sintaxe
-
 set nu
 set laststatus=2
 set noshowmode
+set ma
 syntax on
 set ai
 set expandtab
 set smarttab
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
+
 
 " Configuranado o clipboard
 set clipboard=unnamed
@@ -62,11 +63,11 @@ let g:lightline = {
 
 " Configurações do prettier e eslint
 let g:ale_fixers = {
- \ 'javascript': ['eslint'],
- \ 'typescript': ['eslint'] 
- \ }
+      \ 'javascript': ['eslint'],
+      \ 'typescript': ['eslint'] 
+      \ }
 
-let g:ale_sign_error = '❌'
+let g:ale_sign_error ='🔥'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fix_on_save = 1
 
@@ -75,6 +76,19 @@ colorscheme dracula
 " Configurações do Ctrl C
 vmap <C-c> "+y
 
+" autocmd FileType typescript setlocal completeopt-=menu
+let g:tsuquyomi_completion_detail = 0
 au BufNewFile,BufRead *.ts setlocal filetype=typescript
 au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
-autocmd BufWritePre *.ts Neoformat
+au BufNewFile,BufRead *.js setlocal filetype=javascript
+au BufNewFile,BufRead *.jsx setlocal filetype=javascript.jsx
+
+"autocmd BufWritePre *.ts Neoformat
+"autocmd BufWritePre *.js Neoformat
+
+map <ESC>[5D <C-Left>
+map <ESC>[5C <C-Right>
+map! <ESC>[5D <C-Left>
+map! <ESC>[5C <C-Right>
+map <Space> :noh<cr>
+

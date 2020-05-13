@@ -205,3 +205,4 @@ for_window [class=".*"] border pixel 0
 bindcode $mod+48 exec ~/.i3/bin/i3-toggle-border
 
 bindsym $mod+b exec opera
+bindsym $mod+i exec insomnia

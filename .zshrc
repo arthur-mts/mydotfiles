@@ -162,4 +162,4 @@ alias polybar-restart="killall polybar ; sh $HOME/.config/polybar/launch.sh"
 # source ~/.cache/wal/colors-tty.sh
 # neofetch
 alias shutdown="sudo systemctl -i poweroff"
-JWT_SECRET="mysecret"
+alias vim="nvim"

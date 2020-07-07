@@ -1,4 +1,5 @@
 " Configurações de digitação e sintaxe
+set belloff=all
 set laststatus=2
 syntax on
 set noerrorbells
@@ -39,6 +40,8 @@ Plug 'mbbill/undotree'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -247,3 +250,14 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
+" FZF config
+
+" Empty value to disable preview window altogether
+let g:fzf_preview_window = ''
+
+" Always enable preview window on the right with 60% width
+let g:fzf_preview_window = 'right:60%'
+
+nnoremap <C-S-P> :GFiles<cr>

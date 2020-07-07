@@ -3,7 +3,7 @@
 
 ## XFCE
 
-[![Screenshot XFCE]]()
+[![Screenshot vim](https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/xfce.png ".vimrc")](http://https://raw.githubusercontent.com/arthur-mts/mydotfiles/master/xfce.png "Screenshot XFCE")
 
 ### Vim
 
